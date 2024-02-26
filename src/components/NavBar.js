@@ -4,7 +4,7 @@ import { Navbar, Container } from 'react-bootstrap';
 import {useState , useEffect} from  'react';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/git.png';
-import logo from '../assets/img/myportpp.png';
+import logo from '../assets/img/newpp.png';
 
 function NavBar() {
     const[activeLink, setActiveLink] = useState('home');

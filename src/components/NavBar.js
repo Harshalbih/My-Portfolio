@@ -45,7 +45,7 @@ function NavBar() {
             <a href='https://www.linkedin.com/in/harshal-bihade/' target='blank'><img src={navIcon1} alt='linkedIn' /></a>
             <a href='https://github.com/Harshalbih' target='blank'><img src={navIcon2} alt='gitHub' /></a>
             </div>
-            <button className='contact-btn'>Contact Me</button>
+            <a href="#contact"><button className='contact-btn'>Contact Me</button></a>
           </span>
         </Navbar.Collapse>
       </Container>

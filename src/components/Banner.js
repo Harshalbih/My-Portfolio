@@ -5,7 +5,7 @@ import resumepdf from '../assets/myresume.pdf';
 import { BsArrowDownCircle } from "react-icons/bs";
 
 function Banner() {
-    const textItems = ['A Web Developer', 'A ReactJS Developer', 'A FrontEnd Developer'];
+    const textItems = ['A Web Developer', 'A ReactJs Developer', 'A FrontEnd Developer'];
     const [curIndex, setCurIndex] = useState(0);
 
     useEffect(()=>{

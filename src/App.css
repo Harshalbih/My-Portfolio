@@ -102,7 +102,7 @@ nav.navbar.scrolled {
   background-color: #121212;
 }
 nav.navbar a.navbar-brand {
-  width: 6%;
+  width:10%;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -228,6 +228,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
+  text-align: -webkit-center;
 }
 .banner .tagline {
   font-weight: 700;
@@ -338,7 +339,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   flex-direction: column;
 }
 .background-image-left {
-  top: 28%;
+  top: -5%;
   position: absolute;
   bottom: 0;
   width: 40%;
@@ -424,15 +425,40 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .proj-imgbx img {
   height: 300px;
 }
+.proj-bg {
+  height: 100px;
+}
 
 /************ Contact Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 60px 0 200px 0;
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #3a393f 111.58%);
+  padding: 60px 0 100px 0;
 }
 .contact img {
   width: 92%;
 }
+.contact img {
+  animation: circularMotion 5s linear infinite;
+}
+
+@keyframes circularMotion {
+  0% {
+    transform: translateY(-10px) translateX(10px);
+  }
+  25% {
+    transform: translateY(10px) translateX(10px);
+  }
+  50% {
+    transform: translateY(10px) translateX(-10px);
+  }
+  75% {
+    transform: translateY(-10px) translateX(-10px);
+  }
+  100% {
+    transform: translateY(-10px) translateX(10px);
+  }
+}
+
 .contact h2 {
 	font-size: 45px;
 	font-weight: 700;
@@ -495,4 +521,63 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button:hover::before {
   width: 100%;
+}
+
+/************ Footer Css ************/
+.footer {
+  padding: 0 0 30px 0;
+  background-image: url('./assets/img/footer-bg.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer img {
+  width: 22%;
+}
+.footer .text-center {
+  margin-top: 20px;
+}
+.footer p {
+  font-weight: 400;
+  font-size: 14px;
+  color: #B8B8B8;
+  letter-spacing: 0.5px;
+  margin-top: 20px;
+}
+
+/* Small Responsive Changes */
+@media only screen and (max-width: 600px) {
+  .navbar-collapse {
+    background: #000;
+}
+nav.navbar .navbar-nav .nav-link.navbar-link {
+  padding: 10px 25px;
+}
+  nav.navbar a.navbar-brand {
+    width: 25%;
+}
+.banner img {
+  margin-top: 20px;
+}
+.skill-slider .item img {
+  width: 50%;
+}
+.skill-slider .item h5{
+  font-size: 0.75rem !important;
+}
+.react-multiple-carousel__arrow--left{
+  left: -5%;
+}
+.react-multiple-carousel__arrow--right {
+  right: -5%;
+}
+.project p {
+  width: 75%;
+}
+.contact , .footer{
+  text-align: -webkit-center;
+}
+.footer img {
+  width: 30%;
+}
 }

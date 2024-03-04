@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import netflixi from "../assets/img/netflixi.png";
 import onlinei from "../assets/img/onlinemeali.png";
-import multii from "../assets/img/multii.png";
+import multii from "../assets/img/reacttail.png";
 import chatgpti from "../assets/img/chatgp.png";
 import multi from "../assets/img/multi.jpg";
 import gitprofi from "../assets/img/gitprofi.png";
@@ -29,7 +29,7 @@ function Projects() {
       description:
         "React Router app of Accordions, Dropdown, Buttons, Modal, Table components using Tailwind CSS",
       imgUrl: multii,
-      url: "https://harshalbih.github.io/React-tailwind/",
+      url: "https://react-components-tailwind-harshal.netlify.app/",
     },
     {
       title: "ChatGPT",

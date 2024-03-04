@@ -25,7 +25,7 @@ function Contact() {
     const handleSubmit = (e) => {
       e.preventDefault();
       const scriptURL =
-        "https://script.google.com/macros/s/AKfycbyXzd43Ze7RNpspcr9cALF1VF7gAnevyFNfu-84iF3XcydSMZUl67NeOfpEz7YBJdI/exec";
+        "https://script.google.com/macros/s/AKfycbwcMAqDvCLdwPHYJmRdGWMKdCJFfhQPxZJsnqtK-XCpjxEUM5lQGeuPvfIphQNWrL1-hA/exec";
       const form = document.forms["submit-to-google-sheet"];
       fetch(scriptURL, { method: "POST", body: new FormData(form) })
         .then((response) => console.log("Success!", response))

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import headerImg from '../assets/img/header-img.svg';
-import resumepdf from '../assets/myresume.pdf';
+// import resumepdf from '../assets/myresume.pdf';
 import { BsArrowDownCircle } from "react-icons/bs";
 
 function Banner() {
@@ -27,7 +27,7 @@ function Banner() {
                     <h2>{`Hi I'm Harshal Bihade`}</h2>
                     {textItems.map((text, index)=> (<h2 key={index} style={{ display: curIndex===index ? 'block' : 'none'}} className='leftright'>"{text}"</h2>))}
                     <p>Versatile Front-End UI Developer with 4+ years of experience in Designing, Developing and maintaining complex Healthcare, Pharmaceutical and E-commerce sites using a variety of Tools and Technologies such as HTML, Tailwind CSS, JavaScript, jQuery, React.js, Redux, Git, JIRA and Bootstrap.</p>
-                    <button className='resume-btn'><a href={resumepdf} target='blank'>My Resume <BsArrowDownCircle size={25}/> </a></button>
+                    {/* <button className='resume-btn'><a href={resumepdf} target='blank'>My Resume <BsArrowDownCircle size={25}/> </a></button> */}
                 </Col>
                 <Col xs={12} md={6} cl={7}>
                     <img src={headerImg} alt='banner img' />
